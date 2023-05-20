@@ -36,3 +36,7 @@ ou<br>
 ## Desfazer migration
 
 ` php artisan migrate:rollback `
+
+## Mostar comandos
+
+` php artisan list `
