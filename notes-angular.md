@@ -1,4 +1,5 @@
-Angular
-npm install --save --legacy-peer-deps
-npm start
-ng test "--test-name-pattern=^RedeOcorrenciaAreaAfetadaTableComponent"
+# Angular
+
+` npm install --save --legacy-peer-deps  `<br>
+` npm start  `<br>
+` ng test "--test-name-pattern=^RedeOcorrenciaAreaAfetadaTableComponent"  `<br>
