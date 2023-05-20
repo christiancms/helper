@@ -15,5 +15,24 @@
 `composer create-project --prefer-dist laravel/laravel evolucao "9.*" `
 
 Com detalhes <br>
-`php composer.phar show laravel/framework `<br>  ou<br>
+`php composer.phar show laravel/framework `<br>
+ou<br>
 `composer show laravel/framework `
+
+## Criando migrations
+
+` php artisan make:migration create_users ` <br>
+` php artisan make:migration alter_users ` <br>
+` php artisan make:migration alter_users_table --create=usuarios `
+
+## Config database
+
+* .env
+
+## Rodar migration
+
+` php artisan migrate `
+
+## Desfazer migration
+
+` php artisan migrate:rollback `
