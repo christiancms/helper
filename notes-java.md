@@ -1,0 +1,5 @@
+Maven
+mvn clean install -DskipTests
+mvn validate
+mvn -Dtest=ListarRedeOcorrenciaAreaAfetadaRestTest test
+mvn -Dtest=ListarRedeOcorrenciaAreaAfetadaRestTest#deveListarAreaAfetadaPorRedeOcorrenciaRest test
