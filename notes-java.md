@@ -6,6 +6,13 @@
      //Do whatever
  }).start();
 ```
+### Java 8
+```java
+CompletableFuture.runAsync(() -> {
+    // method call or code to be asynch.
+})
+```
+
 # Maven
 
 ` mvn clean install -DskipTests `<br>
