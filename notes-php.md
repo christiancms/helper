@@ -6,6 +6,8 @@
 ` composer install `<br>
 ` composer update `<br>
 ` composer status -v `<br>
+` cp .env.example .env `<br>
+` php artisan key:generate`<br>
 
 > Obs foi necessário alterar o "C:\php82\php.ini"
 > habilitando extension=gd removendo o ;
