@@ -39,6 +39,16 @@ ou<br>
 
 ` php artisan migrate:rollback `
 
+## Apagar e refazer migration
+
+` php artisan migrate:fresh `
+
+## Storage link
+
+` ll public - mostra se já existe o link`
+
+` php artisan storage:link `
+
 ## Mostar comandos
 
 ` php artisan list `
