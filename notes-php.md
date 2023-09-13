@@ -34,10 +34,12 @@ ou<br>
 ## Rodar migration
 
 ` php artisan migrate `
+` php artisan migrate:status `
 
 ## Desfazer migration
 
 ` php artisan migrate:rollback `
+` php artisan migrate:rollback --step=1 `
 
 ## Apagar e refazer migration
 
