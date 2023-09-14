@@ -4,3 +4,4 @@
 ` npm start  `<br>
 ` ng test "--test-name-pattern=^RedeOcorrenciaAreaAfetadaTableComponent"  `<br>
 ` npm run build  `<br>
+` npm run lint  `<br>
