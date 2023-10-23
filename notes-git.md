@@ -21,3 +21,8 @@ Go to working branch(fse-bor-ajustes-endpoints) <br>
 ` git rebase origin/fse-bor `<br>
 ` git push -f `<br>
 Create Pull Request
+
+
+Rename branch<br>
+` git branch -m master main `<br>
+``<br>
