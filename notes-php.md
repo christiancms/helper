@@ -44,6 +44,7 @@ ou<br>
 ## Apagar e refazer migration
 
 ` php artisan migrate:fresh `
+` php artisan migrate:reset `
 
 ## Storage link
 
@@ -54,3 +55,7 @@ ou<br>
 ## Mostar comandos
 
 ` php artisan list `
+## Seed tabelas migration
+
+` php artisan db:seed `
+` php artisan db:seed --class=CategoryTableSeeder `
