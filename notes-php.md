@@ -27,6 +27,12 @@ ou<br>
 ` php artisan make:migration alter_users ` <br>
 ` php artisan make:migration alter_users_table --create=usuarios `
 
+## Criando model com migration
+### m: migration c: controller r: request
+
+` php artisan make:model Category -m` <br>
+` php artisan make:model Category -mcr`
+
 ## Config database
 
 * .env
