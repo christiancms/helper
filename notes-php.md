@@ -61,6 +61,11 @@ ou<br>
 ## Mostar comandos
 
 ` php artisan list `
+
+## Criar component inline
+
+` php artisan make:component PageLayout --inline `
+
 ## Seed tabelas migration
 
 ` php artisan db:seed `
