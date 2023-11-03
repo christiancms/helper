@@ -70,3 +70,8 @@ ou<br>
 
 ` php artisan db:seed `
 ` php artisan db:seed --class=CategoryTableSeeder `
+
+## Laravel.log
+
+` tail -f storage/logs/laravel.log `
+ 
