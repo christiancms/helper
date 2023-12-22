@@ -15,7 +15,8 @@
 * php artisan --version (versão do laravel)
 ## Criando projeto
 `composer create-project --prefer-dist laravel/laravel evolucao "9.*" `
-
+## Criando projeto em uma pasta existente
+`composer create-project laravel/laravel . `
 Com detalhes <br>
 `php composer.phar show laravel/framework `<br>
 ou<br>
