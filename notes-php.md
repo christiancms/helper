@@ -76,4 +76,12 @@ ou<br>
 ## Laravel.log
 
 ` tail -f storage/logs/laravel.log `
+
+# Livewire
+
+## Publishing The Config File
+` php artisan livewire:publish --config `
+> 'layout' => 'layouts.app',
+
+
  
