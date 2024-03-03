@@ -123,3 +123,12 @@ public function destroy($id)
         $stores->delete();
     }
 ```
+
+* strtolower
+```
+  $searchText = '%' . strtolower($this->search) . '%';
+```
+* implode
+```
+  $names = $result->responsibilities()->pluck('description')->implode(',');
+```
