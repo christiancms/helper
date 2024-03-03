@@ -1,3 +1,9 @@
+## Many-to-Many Relationship na Controller
+* [attach() function](#attach)
+* [sync() function](#sync)
+* [detach() function](#detach)
+  
+## Illuminate\Database\Eloquent\Collection
 **Illuminate\Database\Eloquent\Collection** oferece uma ampla variedade de métodos para manipulação e iteração de coleções de modelos Eloquent. Aqui está uma lista de alguns dos métodos mais comuns com descrições e exemplos:
 
 1. **all()**: Retorna todos os itens da coleção.
@@ -82,3 +88,38 @@ $exists = App\Models\User::where('status', 'active')->exists();
 $doesntExist = App\Models\User::where('status', 'deleted')->doesntExist();
 ```
 
+
+#### Attach
+This method is used to **create and assign a record** to multiple other records. For example, if I have a store and I want to assign regions where it can serve, I can use this method to do so
+```
+public function store(Request $request)
+    {
+        $regions  = [1, 2, 3];
+
+        $stores = new Stores();
+        $stores->name = $request->input('store_name');
+        $stores->save();
+        $stores->regions()->attach($regions);
+    }
+```
+#### Sync
+This method can be used to **update many-to-many relationship** attachments. You can make a **PUT** request to the update endpoint to achieve this. It reassigns records to the newly provided assignments. For example, if I had a store A that serves the following regions: London, New York, Toronto, and Nairobi, I would want to update its regions given the circumstance(either add more regions or remove some regions).
+```
+public function update(Request $request, $id)
+    {
+        $regions  = [4, 5];
+        $stores = Stores::find($id);
+        $stores->regions()->sync($regions);
+    }
+```
+#### Detach
+This method is used to **delete the attachment of a record in** many-to-many relationships, for example. If I have a store record that wants to close down, I would also want to remove its attachment, meaning the regions it serves. I can have **this method run before a delete function in my controller**.
+```
+public function destroy($id)
+    {
+        $stores = Stores::find($id);
+        $stores->regions()->detach();
+
+        $stores->delete();
+    }
+```
