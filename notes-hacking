@@ -1,4 +1,4 @@
-1. Primeiro, você precisará instar o Aircrack-ng em seu sistema operacional. Você pode fazer isso digitando o seguinte commando no terminal:
+1. Primeiro, você precisará instalar o Aircrack-ng em seu sistema operacional. Você pode fazer isso digitando o seguinte comando no terminal:
 ```
 sudo apt-get install aircrack-ng
 ```
