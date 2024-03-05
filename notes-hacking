@@ -1,0 +1,9 @@
+1. Primeiro, você precisará instar o Aircrack-ng em seu sistema operacional. Você pode fazer isso digitando o seguinte commando no terminal:
+```
+sudo apt-get install aircrack-ng
+```
+2. Em seguida, você precisará escanear a sua rede wireless para encontrar o endereço MAC do roteador e o nome da rede (SSID). Você pode fazer isso digitando o seguinte comando:
+```
+sudo iwlist wlan0 scan
+```
+3. Após identificar o endereço MAC e SSID da sua rede, você pode iniciar o processo de auditoria usando o comando airodump-ng. Esse comando irá capturar pacotes da sua rede wireless e salvar em um arquivo chamado "captura.cap"
