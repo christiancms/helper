@@ -12,3 +12,7 @@ sudo apt update && sudo apt upgrade -y
 ```sh
 sudo apt install google-chrome-stable
 ```
+Criar um arquivo vazio no terminal
+```
+touch fileName
+```
