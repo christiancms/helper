@@ -39,6 +39,9 @@ ou<br>
 
 * .env
 
+## Rodar projeto especificando porta e IP
+` php artisan serve --host=0.0.0.0 --port=0000 `
+
 ## Rodar migration
 
 ` php artisan migrate `
