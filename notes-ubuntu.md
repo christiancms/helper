@@ -2,6 +2,8 @@
 ```sh
 sudo find / -iname <nome>
 ```
+### Editor de texto
+nano
 ### Atualizar o Google Chrome via terminal
  Abra o terminal com segurando CTRL e apertando a tecla T.
  Para começarmos rode o seguinte comando no terminal para atualizar os pacotes e dependências.
@@ -15,4 +17,16 @@ sudo apt install google-chrome-stable
 Criar um arquivo vazio no terminal
 ```
 touch fileName
+```
+Listar arquivos ocultos
+```
+ls -a
+```
+Exibe o caminho da pasta atual
+```
+pwd
+```
+Vai para a pasta do usuário logado
+```
+cd ~
 ```
