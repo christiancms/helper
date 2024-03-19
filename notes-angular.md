@@ -25,3 +25,8 @@ Isso representa a vinculação de atributos em Angular. É usado para passar val
 ```
 <meu-input [(ngModel)]="valueFilter" [minha_variavel]="nome"></meu-input>
 ```
+### Publicar em prod
+```
+ng build --configuration=production
+```
+Copiar pasta dist para o dominio
