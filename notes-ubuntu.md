@@ -30,3 +30,10 @@ Vai para a pasta do usuário logado
 ```
 cd ~
 ```
+### Instalar novo app .deb
+```
+ cd ~/Downloads/
+ sudo chmod +x discord-0.0.34.deb 
+ sudo apt-get install ./discord-0.0.34.deb 
+ rm -rf discord-0.0.34.deb 
+```
