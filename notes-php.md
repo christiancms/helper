@@ -47,17 +47,17 @@ ou<br>
 
 ## Rodar migration
 
-` php artisan migrate `
+` php artisan migrate ` <br>
 ` php artisan migrate:status `
 
 ## Desfazer migration
 
-` php artisan migrate:rollback `
+` php artisan migrate:rollback ` <br>
 ` php artisan migrate:rollback --step=1 `
 
 ## Apagar e refazer migration
 
-` php artisan migrate:fresh `
+` php artisan migrate:fresh ` <br>
 ` php artisan migrate:reset `
 
 ## Storage link
@@ -76,7 +76,7 @@ ou<br>
 
 ## Seed tabelas migration
 
-` php artisan db:seed `
+` php artisan db:seed ` <br>
 ` php artisan db:seed --class=CategoryTableSeeder `
 
 ## Laravel.log
