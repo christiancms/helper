@@ -74,6 +74,10 @@ ou<br>
 
 ` php artisan make:component PageLayout --inline `
 
+## Criar uma regra para validação
+
+`  php artisan make:rule AgeOnEventDate `
+
 ## Seed tabelas migration
 
 ` php artisan db:seed ` <br>
