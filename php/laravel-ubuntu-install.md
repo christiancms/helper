@@ -81,7 +81,13 @@ If you prefer Nginx, you can install it by:
 sudo apt install nginx
 ```
 
-### 7. Download or Clone Your Laravel Project
+### 7. Download or Clone Your Laravel Project and Permissions
+Permission
+```bash
+$ cd /var/www/html/
+/var/www/html$ sudo chmod -R 777 .
+```
+
 Navigate to the folder where you want to store your Laravel project:
 
 ```bash
