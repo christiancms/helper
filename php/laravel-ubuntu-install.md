@@ -48,6 +48,32 @@ sudo apt install mysql-server
 sudo mysql_secure_installation
 ```
 
+To set the password for the root user in the latest Ubuntu.
+
+First access mysql as superuser with::
+
+```bash
+$ sudo mysql -u root
+```
+
+Then just update the login plugin and grant the “grant” to the root user with the following SQL:
+
+```bash
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'senha-de-root';
+```
+
+Update privileges with the query:
+
+```bash
+FLUSH PRIVILEGES;
+```
+
+Exit mysql with a **\q** and test with the command:
+
+```bash
+ mysql -u root -p
+```
+
 If you're using SQLite, you don't need to install anything extra for the database, as SQLite is built into PHP.
 
 ### 6. Install Apache or Nginx (Optional)
