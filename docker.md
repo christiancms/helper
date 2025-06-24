@@ -1,4 +1,4 @@
-Instalando Docker e Docker-Compose Ubuntu
+Instalando Docker e Docker-Compose Ubuntu :penguin:
 
 ### Passo 1: Instalando o Docker
 Antes de instalar o Docker, você precisa atualizar o índice do pacote do seu sistema. Abra o terminal e execute o seguinte comando:
