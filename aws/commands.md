@@ -11,7 +11,38 @@ Teste:
 ```
 aws --version
 ```
-Vamos quebrar o comando:
+### Configure:
+```
+aws configure
+```
+
+O CLI irá te guiar por algumas perguntas. Para o Brasil, a região padrão da AWS é ```sa-east-1``` (São Paulo).
+
+- ```AWS Access Key ID [None]```: Aqui você pode inserir suas credenciais AWS reais se for interagir com a AWS na nuvem. Se você está usando apenas LocalStack, você pode colocar valores fictícios como ```test``` ou ```foo``` (o LocalStack geralmente não valida credenciais). Se já tiver um ID, ele aparecerá entre colchetes.
+
+- ```AWS Secret Access Key [None]```: Da mesma forma, para LocalStack, pode ser ```test``` ou ```bar```. Para AWS real, insira sua chave secreta.
+
+- ```Default region name [None]```: Esta é a parte importante para o seu erro. Digite ```sa-east-1``` e pressione Enter.
+  - Região de São Paulo (Brasil): ```sa-east-1```
+
+- ```Default output format [None]```: Você pode deixar em branco para o padrão, ou digitar ```json``` (que é o mais comum e recomendado para scripts e automação), ```text``` ou ```table```.
+
+Um exemplo de como seria a interação:
+```
+aws configure
+AWS Access Key ID [None]: AKIAIOSFODNN7EXAMPLE # Ou "test" para LocalStack
+AWS Secret Access Key [None]: wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY # Ou "test" para LocalStack
+Default region name [None]: sa-east-1
+Default output format [None]: json
+```
+### Local da instalação
+O AWS CLI salva essas informações em dois arquivos no seu diretório de usuário (normalmente ```~/.aws/``` no Linux/Ubuntu):
+
+- ```~/.aws/credentials```: Armazena as chaves de acesso (Access Key ID e Secret Access Key).
+
+- ```~/.aws/config```: Armazena a região padrão, o formato de saída e outras configurações.
+
+### Explicando o comando:
 
 - ```aws```: É o comando principal da AWS Command Line Interface (CLI), uma ferramenta que permite interagir com os serviços da AWS a partir do seu terminal.
 
