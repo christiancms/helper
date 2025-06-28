@@ -79,8 +79,8 @@ aws-local cloudwatch put-metric-data \
 - **Função**: Armazenamento de objetos (arquivos) de forma escalável.
 - **Exemplo**: Salvar arquivos de backup e documentos do sistema.
 ```
-aws-local s3api create-bucket --bucket my-bucket
-aws-local s3 cp myfile.txt s3://my-bucket/myfile.txt
+aws-local s3api create-bucket --bucket christianxouza
+aws-local s3 cp myfile.txt s3://christianxouza/myfile.txt
 ```
 `mb` significa "make bucket" (criar bucket). É um subcomando da AWS CLI.
 
@@ -91,6 +91,10 @@ aws-local s3 cp myfile.txt s3://my-bucket/myfile.txt
 `s3://christianxouza` nome do bucket que será criado, como se fosse uma URL S3.
 ```
 aws-local s3 mb s3://christianxouza
+```
+- Download do arquivo que está no storage (o ponto indica a pasta atual vai receber o download, `myfile.txt`)
+```
+aws-local cp s3://christianxouza/myfile.txt .
 ```
 ---
 
