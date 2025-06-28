@@ -83,6 +83,7 @@ aws-local s3api create-bucket --bucket my-bucket
 aws-local s3 cp myfile.txt s3://my-bucket/myfile.txt
 ```
 `mb` significa "make bucket" (criar bucket). É um subcomando da AWS CLI.
+
 `ls` exibe os arquivos, listar.
 
 `s3://christianxouza` nome do bucket que será criado, como se fosse uma URL S3.
