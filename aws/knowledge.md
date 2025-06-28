@@ -86,6 +86,8 @@ aws-local s3 cp myfile.txt s3://my-bucket/myfile.txt
 
 `ls` exibe os arquivos, listar.
 
+`cp` copiar arquivo para o bucket.
+
 `s3://christianxouza` nome do bucket que será criado, como se fosse uma URL S3.
 ```
 aws-local s3 mb s3://christianxouza
