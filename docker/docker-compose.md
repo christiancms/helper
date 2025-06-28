@@ -17,3 +17,12 @@ Verify that Docker Compose is installed correctly by checking the version.
 ```
  docker compose version
 ```
+
+Start application
+```
+docker compose up
+```
+Stop applicationn
+```
+docker compose stop
+```
