@@ -11,11 +11,14 @@ Teste:
 ```
 aws --version
 ```
-### Configure:
+### Configure (default):
 ```
 aws configure
 ```
-
+Criando um perfil `localstack`:
+```
+aws configure --profile localstack
+```
 O CLI irá te guiar por algumas perguntas. Para o Brasil, a região padrão da AWS é `sa-east-1` (São Paulo).
 
 - `AWS Access Key ID [None]`: Aqui você pode inserir suas credenciais AWS reais se for interagir com a AWS na nuvem. Se você está usando apenas LocalStack, você pode colocar valores fictícios como `test` ou `foo` (o LocalStack geralmente não valida credenciais). Se já tiver um ID, ele aparecerá entre colchetes.
