@@ -1,13 +1,10 @@
 # 🧠 Serviços Essenciais da AWS
 
 # 🧪 Exemplos AWS CLI com LocalStack
-
-> Use `--endpoint-url=http://localhost:4566` em cada comando  
-> ou crie um alias para simplificar:
->
-> ```
-> alias aws-local="aws --endpoint-url=http://localhost:4566 --profile localstack"
-> ```
+Use `--endpoint-url=http://localhost:4566` em cada comando ou crie um alias para simplificar:
+```
+alias aws-local="aws --endpoint-url=http://localhost:4566 --profile localstack"
+```
 
 ---
 
@@ -85,7 +82,12 @@ aws-local cloudwatch put-metric-data \
 aws-local s3api create-bucket --bucket my-bucket
 aws-local s3 cp myfile.txt s3://my-bucket/myfile.txt
 ```
+`mb` significa "make bucket" (criar bucket). É um subcomando da AWS CLI.
 
+`s3://christianxouza` nome do bucket que será criado, como se fosse uma URL S3.
+```
+aws-local s3 mb s3://christianxouza
+```
 ---
 
 ## 👥 Amazon Cognito
