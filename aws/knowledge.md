@@ -94,7 +94,7 @@ aws-local s3 mb s3://christianxouza
 ```
 - Download do arquivo que está no storage (o ponto indica a pasta atual vai receber o download, `myfile.txt`)
 ```
-aws-local cp s3://christianxouza/myfile.txt .
+aws-local s3 cp s3://christianxouza/myfile.txt .
 ```
 ---
 
